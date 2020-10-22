@@ -96,7 +96,6 @@ function CreateTrees() {
           IsRunning = true;
           IntervalID = setInterval(Step, INTERVAL_MILLIS);
           // logging
-          console.log("Played with the example");
           run_logging();
         }
       });
