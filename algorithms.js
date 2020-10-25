@@ -3,7 +3,9 @@ onload = function () {
   init();
 };
 
-function doAlgoStep1() {    
+function doAlgoStep1() {
+  run_logging();
+    
   remove("hand");
   remove("go-button");
 
@@ -15,10 +17,7 @@ function doAlgoStep1() {
   arrow.className = "arrow";
   arrow.src = "https://raw.githack.com/hourofci/lessons-dev/master/beginner-lessons/computational-thinking/supplementary/arrow-up.png";
   document.getElementById("highlighted-tree").appendChild(arrow);
-  animate("move-arrow-up 2s", arrow, doAlgoStep2);
-  
-  // logging
-  run_logging();
+  animate("move-arrow-up 2s", arrow, doAlgoStep2); 
 }
 
 function doAlgoStep2() {
